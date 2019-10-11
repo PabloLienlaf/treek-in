@@ -1,0 +1,28 @@
+.primary-button {
+  background-color: $ball-blue;
+  padding: 0.5em;
+  color: $white;
+  border: none;
+  font-family: $open-sans;
+  font-size: $medium;
+
+  &:hover {
+    background-color: $middle-blue;
+  }
+
+  &:focus {
+    background-color: $silver-chalice;
+  }
+  &-regular {
+    margin: 0em 1em;
+  }
+
+  &-large {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    padding: 1em 0;
+    cursor: pointer;
+  }
+}

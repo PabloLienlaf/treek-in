@@ -1,0 +1,30 @@
+.price {
+  position: relative;
+  padding-top: 10em;
+
+  &__title {
+    color: $white;
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+
+  .row {
+    padding: 1em 15%;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    background-color: $onyx;
+  }
+}
+
+.prices-svg {
+  width: 100%;
+  position: absolute;
+  z-index: -9999;
+  top: 1rem;
+  right: 0;
+}

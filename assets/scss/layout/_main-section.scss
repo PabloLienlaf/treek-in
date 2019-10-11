@@ -1,0 +1,17 @@
+.features {
+  padding: 1em 10%;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  &__image{
+    align-self: center;
+    max-width: 90%;
+  }
+
+  &__text {
+    align-self: center;
+  }
+}

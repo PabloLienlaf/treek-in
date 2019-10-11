@@ -1,0 +1,28 @@
+body {
+  font-family: $open-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $raleway;
+  font-weight: $bold;
+  line-height: 1.3;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: $xxxxx-large;
+}
+
+h2 {
+  font-size: $xxxx-large;
+  text-align: center;
+}
+
+h3, h4 {
+  font-size: $xxx-large;
+}
+
+p {
+  font-family: $open-sans;
+  line-height: 1.6;
+}

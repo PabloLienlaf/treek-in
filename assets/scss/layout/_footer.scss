@@ -1,0 +1,29 @@
+.footerSection {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $raisin-black;
+  width: 100%;
+  p, a {
+    color: $silver-chalice;
+  }
+  &__list {
+    display: flex;
+    li a {
+      padding-left: 2em;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footerSection {
+    padding: 2rem 2rem;
+    flex-direction: row;
+    &__copyright {
+    text-align: right;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.navigation {
+  background-color: $white;
+  width: 100%;
+  z-index: 2;
+
+
+  &__d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    position: absolute;
+    padding: 2em 1em 2em 0;
+  }
+
+  &__collapsible {
+    text-align: right;
+    padding: 2em 0;
+    width: 100%;
+    .menu {
+      font-size: 1.8rem;
+      display: block;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+
+  &__container {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 2;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    padding: .5em 0;
+    text-align: center;
+  }
+
+  &__link {
+    color: $raisin-black;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin: 0.5em 0;
+      color: $raisin-black;
+    }
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      position: static;
+      padding: 2em 1em 2em 0;
+    }
+
+    &__collapsible {
+      width: 100%;
+      clear: right;
+      padding: 0;
+      .menu {
+        display: none;
+      }
+    }
+
+    &__container {
+      max-height: 100%;
+      padding: 2em;
+      overflow: visible;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__item {
+      padding: 0;
+      padding-right: 1em;
+      border: none;
+      width: initial;
+      text-align: left;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        margin: 0;
+        margin-left: 1em;
+        color: $raisin-black;
+      }
+    }
+  }
+}

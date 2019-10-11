@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: $white;
+  justify-self: center;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 5px 5px 10px $raisin-black;
+  }
+
+  &__price {
+    padding-bottom: 1em;
+  }
+
+  &__features {
+    padding: 1em 0;
+    flex-grow: 2;
+    flex-basis: 160px;
+    border-bottom: solid 1px $spanish-gray;
+    border-top: solid 1px $spanish-gray;
+    padding-left: 1.5em;
+    list-style-type: disc;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+
+  &__button {
+    flex-grow: 1;
+    flex-basis: 30px;
+    display: flex;
+    align-items: center;
+  }
+}
